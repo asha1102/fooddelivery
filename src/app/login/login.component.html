@@ -1,0 +1,51 @@
+<!--<form [formGroup]="loginForm" novalidate (ngSubmit)="userLogin()">
+  <div>
+    <div>
+      <label>Login Id</label>
+      <input formControlName="cemail" name="cemail" placeholder="LoginId" />
+      
+    </div>
+    <div>
+      <label>Password</label>
+      <input  formControlName="cpassword" name="cpassword" placeholder="Password" />
+    </div>
+    
+    <button type="submit" >Login</button>
+
+  </div>
+
+
+</!--<form>-->
+  <div *ngIf="!loggedIn" >
+    {{msg}}
+    <br>
+    <br>
+    <br>
+    <div class="center">
+      
+      <table><tr>
+   <td>Enter Email</td> 
+     <td><input [(ngModel)]="logindetails.cemail" placeholder="email"/></td>
+     <!-- <label>{{logindetails.LoginId}}</label> -->
+     </tr>
+ 
+   
+   <tr>
+     <td>Enter Password</td>
+     <td><input [(ngModel)]="logindetails.cpassword" placeholder="Password"/></td>
+      <!-- <label>{{logindetails.Password}}</label> -->
+   </tr>
+   <tr><td></td>
+<td>    <input class="btn" type="submit" Value="Login" (click)='customerLogin()'/></td>
+
+</tr>
+</table>
+
+</div>
+
+</div>
+<div *ngIf="loggedIn">
+<label>Welcome {{ c.cname }} </label>
+
+
+</div>

@@ -1,0 +1,23 @@
+ 
+<!--<table >
+   
+    <tr *ngFor= "let r of restraunt">
+        
+     <td [title]="r?.name ">{{r?.rname}}</td>
+       
+        
+    </tr>
+</table>
+-->
+
+
+  <div *ngFor="let r of restraunt">
+
+    <h3>
+      <a [title]="r.rname + ' details'">
+        {{ r.rname }}
+      </a>
+    </h3>
+  
+  </div>
+
